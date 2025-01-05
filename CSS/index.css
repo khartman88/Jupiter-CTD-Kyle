@@ -1,0 +1,59 @@
+body {
+    background-color: #2B4F3E; 
+    color: #F4E3C2;
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  .eb-garamond {
+    background-color: #2B4F3E; 
+    color: #F4E3C2;
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 5px;
+    border: 5px solid #F4E3C2
+}
+
+#About {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    text-transform: capitalize;
+    text-shadow: 10px 10px 10px #1218ab;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: 400;
+    color: aqua;
+}
+
+#Experience {
+    display: block;
+    background-color: #452403;
+    border: 5px solid #ddd;
+    border-radius: 100px;
+    padding: 20px;
+    font-family: "EB Garamond", serif;
+    color: #F4E3C2;
+}
+
+#Connect {
+    display: block;
+    background-color:rgb(165, 80, 151);
+    border: 5px solid #ddd;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000
+}
