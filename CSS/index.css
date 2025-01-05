@@ -1,3 +1,18 @@
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    color:burlywood;
+
+}
+
 body {
     background-color: #2B4F3E; 
     color: #F4E3C2;
@@ -22,7 +37,7 @@ section {
     border: 5px solid #F4E3C2
 }
 
-#About {
+#about {
     text-align: center;
 }
 
@@ -39,7 +54,25 @@ h2 {
     color: aqua;
 }
 
-#Experience {
+#experience {
+    display: flex;
+    background-color: #452403;
+    border: 5px solid #ddd;
+    border-radius: 100px;
+    padding: 20px;
+    font-family: "EB Garamond", serif;
+    color: #F4E3C2;
+}
+
+.job-experience {
+    display: flex;
+    flex-direction: column;
+    color: burlywood;
+    margin: 10px;
+    padding-left: 10px;
+}
+
+#skills {
     display: block;
     background-color: #452403;
     border: 5px solid #ddd;
@@ -49,8 +82,9 @@ h2 {
     color: #F4E3C2;
 }
 
-#Connect {
-    display: block;
+
+#connect {
+    display: flex;
     background-color:rgb(165, 80, 151);
     border: 5px solid #ddd;
     padding: 20px;
