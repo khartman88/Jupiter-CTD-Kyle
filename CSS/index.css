@@ -13,6 +13,8 @@ nav a {
 
 }
 
+
+/* default computer css */
 body {
     background-color: #2B4F3E; 
     color: #F4E3C2;
@@ -91,3 +93,47 @@ h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #000000
 }
+
+/* media queries for tablet */
+@media (min-width: 600px) and (max-width: 900px) {
+    body {
+        background-color: blue;
+        font-weight: 300;
+    }
+    
+    h1 {
+        font-size: xx-large;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    #experience {
+        text-align: center;
+        background-color: rgb(151, 151, 27);
+    }
+}
+
+/* media queires for phone */
+@media (max-width: 599px) {
+    h2 {
+        color: black;
+        text-shadow: yellow;
+    }
+
+    #connect {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .job-experience {
+        flex-direction: row;
+        font-style: italic;
+    }
+
+    h3 {
+        flex-direction: row;
+        margin-right: 5px;
+    }
+
+
+}
+
