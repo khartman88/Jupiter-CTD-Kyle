@@ -27,6 +27,43 @@ for (let i = 0; i < skills.length; i++) {
     skillsList.appendChild(skill);
 }
 
+
+// fetching repositories from github
+
+const githubUsername = 'khartman88';
+
+// debug msg
+console.log('Starting to fetch GitHub Repositories...');
+
+fetch(`https://api.github.com/users/${githubUsername}/repos`)
+    .then(response => {
+        // debug msg
+        console.log('Received response from GitHub API:', response);
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.json();
+    })
+    .then(repositories => {
+        console.log('Github Repositories:', repositories);
+
+        const projectSection = document.getElementById('projects');
+        const projectList = projectSection.querySelector('#project-list');
+        projectList.innerHTML = '';
+
+    for (let i = 0; i < repositories.length; i++) {
+        const project = document.createElement('li');
+        project.innerText = repositories[i].name;
+        projectList.appendChild(project);
+    }
+
+    })
+    .catch(error => {
+        console.error('Error fetching Github Repositories', error);
+    });
+    
+
 // handling messages //
 
 const messageForm = document.forms["leave_message"];
@@ -61,5 +98,6 @@ messageForm.addEventListener("submit", function(event) {
     messageList.appendChild(newMessage);
 
     event.target.reset();
+
 });
 
